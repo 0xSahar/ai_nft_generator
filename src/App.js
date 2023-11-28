@@ -37,7 +37,7 @@ function App() {
 
     const network = await provider.getNetwork()
 
-    const nft = new ethers.Contract(config[network.chainId].nft.address, NFT, provider)
+    const nft = new ethers.Contract(config[network.chainId].NFT.address, NFT, provider)
     setNFT(nft)
   }
 
